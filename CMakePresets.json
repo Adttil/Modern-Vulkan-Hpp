@@ -7,7 +7,13 @@
   "configurePresets": [
     {
       "name": "base", "hidden": true,
-      "cacheVariables": { "VULKAN_HPP_DISPATCH_LOADER_DYNAMIC": "ON", "VULKAN_HPP_BUILD_WITH_LOCAL_VULKAN_HPP": "ON" }
+      "generator": "Ninja",
+      "cacheVariables": { 
+        "VULKAN_HPP_DISPATCH_LOADER_DYNAMIC": "ON", 
+        "VULKAN_HPP_BUILD_WITH_LOCAL_VULKAN_HPP": "ON",
+        "CMAKE_C_COMPILER": "clang.exe",
+        "CMAKE_CXX_COMPILER": "clang++.exe"
+      }
     },
     {
       "name": "base-generator-disabled", "hidden": true,

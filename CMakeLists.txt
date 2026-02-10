@@ -29,6 +29,7 @@ include_guard()
 include( CMakeDependentOption )
 project( VulkanHppGenerator LANGUAGES CXX )
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 if( NOT DEFINED CMAKE_CXX_STANDARD AND PROJECT_IS_TOP_LEVEL )
 	set( CMAKE_CXX_STANDARD 11 )
 endif()
